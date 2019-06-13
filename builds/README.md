@@ -1,0 +1,18 @@
+### Create a build
+Clone with git, cd into dir and run:
+```
+sudo chmod -R 777 repository/
+sudo chmod -R 777 private/
+composer install --no-dev
+npm install
+npm run build
+mv configuration_sample.php configuration.php
+rm -Rf node_modules
+rm -Rf frontend
+rm -Rf builds
+rm -Rf tests
+rm repository/.gitignore babel.config.js composer* cypress* .env* .eslint* .gitignore jest.* package* .php_cs phpunit* postcss* vue*
+cd ..
+zip -r filegator_v7.0.0.zip filegator/
+
+```
