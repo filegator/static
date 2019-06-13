@@ -9,8 +9,8 @@ npm run build
 mv configuration_sample.php configuration.php
 rm -Rf node_modules
 rm -Rf frontend
-rm -Rf builds
 rm -Rf tests
+rm -Rf .git
 rm repository/.gitignore babel.config.js composer* cypress* .env* .eslint* .gitignore jest.* package* .php_cs phpunit* postcss* vue*
 cd ..
 zip -r filegator_v7.0.0.zip filegator/
