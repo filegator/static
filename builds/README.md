@@ -13,6 +13,7 @@ rm -Rf frontend
 rm -Rf tests
 rm -Rf docs
 rm -Rf .git
+rm -Rf .github
 rm README.md couscous.yml .travis.yml repository/.gitignore babel.config.js composer* cypress* .env* .eslint* .gitignore jest.* package* .php_cs* phpunit* postcss* vue*
 cd ..
 ./composer-vendor-cleaner/bin/clean --dir filegator/vendor/
