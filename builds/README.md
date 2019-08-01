@@ -1,6 +1,8 @@
 ### Create a build
-Clone with git, cd into dir and run:
+
 ```
+git clone git@github.com:filegator/filegator.git
+cd filegator
 set version in dist/index.php
 sudo chmod -R 777 repository/
 sudo chmod -R 777 private/
