@@ -18,6 +18,12 @@ rm -Rf .git
 rm -Rf .github
 rm README.md couscous.yml .travis.yml repository/.gitignore babel.config.js cypress* .env* .eslint* .gitignore jest.* .php_cs* phpunit* postcss* vue*
 cd ..
+
+git clone git@github.com:mediamonks/composer-vendor-cleaner.git
+cd composer-vendor-cleaner/ && composer install
+chmod 777 ./bin/clean
+cd ..
+
 ./composer-vendor-cleaner/bin/clean --dir filegator/vendor/
 zip -r filegator_v7.0.0.zip filegator/
 
