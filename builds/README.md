@@ -9,7 +9,6 @@ sudo chmod -R 777 private/
 composer install --no-dev
 npm install
 npm run build
-cp configuration_sample.php configuration.php
 rm -Rf node_modules
 rm -Rf frontend
 rm -Rf tests
