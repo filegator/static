@@ -4,9 +4,9 @@
 git clone git@github.com:filegator/filegator.git
 cd filegator
 set version in dist/index.php
-sudo chmod -R 777 repository/
-sudo chmod -R 777 private/
-composer install --no-dev
+chmod -R 775 repository/
+chmod -R 775 private/
+composer install --no-dev --ignore-platform-reqs
 npm install
 npm run build
 rm -Rf node_modules
