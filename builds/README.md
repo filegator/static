@@ -24,6 +24,14 @@ chmod 777 ./bin/clean
 cd ..
 
 ./composer-vendor-cleaner/bin/clean --dir filegator/vendor/
-zip -r filegator_v7.0.0.zip filegator/
+zip -r filegator_v7.x.x.zip filegator/
+
+cp filegator_v7.x.x.zip static/builds/filegator_v7.x.x.zip
+rm static/builds/filegator_latest.zip
+cp filegator_v7.x.x.zip static/builds/filegator_latest.zip
+
+
+# release version tag on github for filegator/filegator
+# update docs (couscous dep) in filegator/filegator folder
 
 ```
