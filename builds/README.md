@@ -29,6 +29,8 @@ zip -r filegator_v7.x.x.zip filegator/
 cp filegator_v7.x.x.zip static/builds/filegator_v7.x.x.zip
 rm static/builds/filegator_latest.zip
 cp filegator_v7.x.x.zip static/builds/filegator_latest.zip
+cd static
+git add -A && git commit -m 'cont' && git push
 
 
 # release version tag on github for filegator/filegator
