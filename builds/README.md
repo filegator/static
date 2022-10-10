@@ -34,6 +34,7 @@ git add -A && git commit -m 'cont' && git push
 
 
 # release version tag on github for filegator/filegator
+# create dockerhub tag & upload
 # update docs (couscous dep) in filegator/filegator folder
 
 ```
