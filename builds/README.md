@@ -34,7 +34,8 @@ git add -A && git commit -m 'cont' && git push
 
 
 # release version tag on github for filegator/filegator
-# create dockerhub tag & upload
+# dockerhub: upload multiarch with proper tags (latest & version)
+docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64,linux/386 --tag filegator/filegator:latest --tag filegator/filegator:7.8.3 .
 # update docs (couscous dep) in filegator/filegator folder
 
 ```
